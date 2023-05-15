@@ -15,7 +15,7 @@ public class BestTimeToTradeStock {
         for (int price: prices) {
             minBuy = Math.min(minBuy,price);
             profit = price - minBuy;
-            maxProfit = Math.max(maxProfit,profit);
+            maxProfit = Math.max(profit, maxProfit);
         }
         return maxProfit;
     }
